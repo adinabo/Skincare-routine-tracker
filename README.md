@@ -1,131 +1,160 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Skincare Routine Tracker
 
-Welcome USER_NAME,
+A Skincare Routine Tracker is a straightforward app designed to help users manage their evening skincare routines. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+As a skincare enthusiast, I've observed that many people are unsure about which products to use, the optimal timing for their application, and which products should not be combined. By developing this simple tracker, users can log their skincare products into the app, which will then generate a personalized routine for them.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
 
-## Gitpod Reminders
+![Responsiveness]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Rationale and Purpose
 
-`python3 -m http.server`
+### Why a Skincare Routine Tracker?
+Maintaining a consistent and effective skincare routine can be challenging, especially for those new to skincare or looking to optimize their regimen. Understanding which products to use, when to apply them, and which combinations to avoid is crucial for achieving the best results and avoiding adverse reactions. As a passionate skincare enthusiast, I recognized a gap in accessible tools that could guide users through this process.
 
-A blue button should appear to click: _Make Public_,
+### The Problem:
+1. Product Confusion: With a plethora of skincare products available, it can be overwhelming to determine what each product does and when it should be used in a routine.
 
-Another blue button should appear to click: _Open Browser_.
+2. Timing and Order: The effectiveness of skincare products can depend significantly on the order of application and the time of day they are used.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+3. Product Incompatibility: Certain skincare ingredients should not be mixed due to potential adverse reactions or reduced efficacy.
 
-A blue button should appear to click: _Make Public_,
+### The Solution:
+The Skincare Routine Tracker is a simple yet powerful app designed to assist users in managing their evening skincare routines. By allowing users to log their skincare products, the app can generate a personalized routine that maximizes the benefits of each product while ensuring safe and effective use.
 
-Another blue button should appear to click: _Open Browser_.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Target audience:**
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+**Real-World Application:**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
 
-### Connecting your Mongo database
+## UX Design Process
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+### Wireframes and Mock-ups 
 
-------
 
-## Release History
+![Inital wireframes]()
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Design Decisions and Reasoning
 
-**June 18, 2024,** Add Mongo back into template
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+## Features
 
-**May 28 2024:** Fix Mongo and Links installs
+**Product Logging:** Users can create a profile, log in and input and store information about their skincare products.
+**Personalized Routine Generation:** Based on the logged products, the app creates a customized routine tailored to the user's specific needs and preferences.
+**Guidance on Product Use:** The app provides recommendations on the optimal timing and order of application for each product.
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Technologies Used
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- HTML
+- CSS
+- Python
+- PostgreSQL
+- Figma for Wireframes
+- Microsoft Designer for AI generated images
+- Git and Github for version control
+- Visual Studio Code
+- Chrome developer tools
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Installation
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+To install the game locally, follow these steps:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+1. Clone the repository using the following command:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+git clone https://
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+2. Open the project folder and open home.html in your preferred browser.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Deployment
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The website was successfully deployed to GitHub. Steps to deploy it:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. Go to the **Settings** tab in the GitHub repository.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+2. Scroll down to **GitHub Pages** and click on **"Check it out here!"**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+3. Make sure to choose **"main"** under **"Source"**.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+4. The page will automatically refresh, showing a detailed ribbon display confirming the deployment.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The live site can be found at the following link: https:/
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Bugs
 
-------
 
-## FAQ about the uptime script
+## UX Scope Testing
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+1. User Interface (UI) Testing:
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+2. User Experience (UX) Testing:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+## Manual Testing
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Principles:
 
-**Can I opt out?**
+Human Insight: Manual testing leverages human intuition and experience to identify issues that automated tests might overlook.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Flexibility: Manual testers can adapt to changes and explore the game in creative ways, beyond predefined test cases.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+User Experience: Manual testing is essential for evaluating the game's user interface and overall user experience.
 
-**Anything more?**
+Exploratory Testing: Manual testers can actively explore the game to uncover unexpected behavior and bugs.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+**Game Reset Test:**
 
-Happy coding!
+**Device Compatibility Test:**
+
+## Automated Testing
+
+**Principles:**
+
+
+- WS3 HTML Testing Validator
+
+[W3C Validator](https://validator.w3.org/)
+![HTML testing result](/assets/images/)
+
+- CSS 
+
+[CSS Validator](https://validator.w3.org/)
+![CSS testing result](/assets/images/)
+
+- 
+
+
+[CSS testing result](https://www.jslint.com/)
+![JavaScript testing result](/assets/images/)
+
+- Google Lighthouse
+
+![Google Lighthouse desktop performance](/assets/images/)
+![Google Lighthouse mobile performance](/assets/images/)
+
+## User Stories
+
+
+
+# Credits
+
+## Content
+
+All content was written by the developer
+
+
+## Imagery
+
+## Code
+
+## Acknowledgements
+
+- My mentor Spencer Barriball for his support and feedback.
+- Code Institute's Tutor Support
+- Newcastle College
