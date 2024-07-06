@@ -143,6 +143,8 @@ Exploratory Testing: Manual testers can actively explore the game to uncover une
 
 
 # Credits
+Bottstrap Grayscale theme was used to create the home page
+https://startbootstrap.com/theme/grayscale
 
 ## Content
 
