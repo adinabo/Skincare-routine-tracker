@@ -11197,7 +11197,7 @@ body {
 /*****************************************************************************Login Form*****/
 body,
 .bg-image-login {
-  background: url('..assets/images/bg-signup.jpg');
+  background: url('../assets/images/bg-form.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
