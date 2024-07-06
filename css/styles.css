@@ -448,14 +448,6 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
-/* rtl:raw:
-[type="tel"],
-[type="url"],
-[type="email"],
-[type="number"] {
-  direction: ltr;
-}
-*/
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -11200,4 +11192,13 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+/*****************************************************************************Login Form*****/
+body,
+.bg-image-login {
+  background: url('..assets/images/bg-signup.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
