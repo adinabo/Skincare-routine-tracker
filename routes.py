@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect, request
 from app import app, db, bcrypt
 from forms import RegistrationForm, LoginForm
-from models import User
+from models import User, Routine, Product, Journal
 from flask_login import login_user, current_user, logout_user, login_required
 
 @app.route("/")
