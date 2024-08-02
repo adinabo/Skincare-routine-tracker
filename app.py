@@ -16,7 +16,6 @@ bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-
 # Import routes
 import routes
 
