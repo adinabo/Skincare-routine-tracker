@@ -5,14 +5,21 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
+from config import Config
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config.from_object(Config)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@localhost/database' #this link needs to be replaced 
 app.config['SECRET_KEY'] = 'thisisasecretkey'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+print("Database URI:", app.config['SQLALCHEMY_DATABASE_URI'])
 
+def create_tables():
+    db.create_all()
+    
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
